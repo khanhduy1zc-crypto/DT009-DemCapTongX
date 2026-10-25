@@ -53,6 +53,12 @@ in_vidu("CA KIEM 3: a=[1,4], X=8", [1, 4], 8, 0)
 in_vidu("CA KIEM 4: a=[-2,0,2], X=0", [-2, 0, 2], 0, 1)
 in_vidu("CA KIEM 5a: mang rong a=[], X=0", [], 0, 0)
 in_vidu("CA KIEM 5b: mot phan tu a=[7], X=14", [7], 14, 0)
+# --- Ca tu thiet ke va ca bien (cho anh A03-A07 theo rubric) ---
+in_vidu("CA TU THIET KE 1 (A03): a=[7,7,7,7], X=14 — trung nhieu, C(4,2)=6", [7, 7, 7, 7], 14, 6)
+in_vidu("CA TU THIET KE 2 (A04): a=[1,2,3,4,5], X=5 — khong trung, 2 cap (1,4),(2,3)", [1, 2, 3, 4, 5], 5, 2)
+in_vidu("CA BIEN 1 (A05): mang rong a=[], X=0 — kich thuoc nho nhat", [], 0, 0)
+in_vidu("CA BIEN 2 (A06): a=[1000000,1000000], X=2000000 — bien |X|=2e6", [1000000, 1000000], 2000000, 1)
+in_vidu("CA BIEN 3 (A07): a=[1000000,-1000000], X=0 — bien |a[i]|=1e6", [1000000, -1000000], 0, 1)
 
 # --- Đo thời gian ba thuật toán theo các quy mô trong phân tích phiếu ---
 print(NGAN_CACH)
